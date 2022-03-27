@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Firebase</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="app.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Learn Firebase</h1>
+
+      <form id="addUser">
+          <input type="text" name="name" placeholder="Add name">
+          <input type="text" name="city" placeholder="Add city">
+          <button>Add</button>
+      </form>
+
+      <ul id="userList"></ul>
+    </div>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBlmsWV2g8iHxLTlqGpxUBEpJvJkGwhCXA",
+        authDomain: "learn-firebase-d025a.firebaseapp.com",
+        projectId: "learn-firebase-d025a",
+        storageBucket: "learn-firebase-d025a.appspot.com",
+        messagingSenderId: "512354105673",
+        appId: "1:512354105673:web:03f552c1b4e55250390298",
+        measurementId: "G-5BS8EVGD3E",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      
+      const db = firebase.firestore();
+    </script>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
